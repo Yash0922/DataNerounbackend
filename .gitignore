@@ -1,0 +1,15 @@
+.env
+.env.production
+.env.local
+
+*.log
+logs/*
+
+node_modules/
+public/cache/
+
+build/
+dist/
+
+.vscode/
+.idea/
