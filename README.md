@@ -66,7 +66,7 @@ This is the backend API for the DataNeuron application. It provides functionalit
 The API uses MongoDB as the database. Mongoose is used as an Object Data Modeling (ODM) layer to simplify interactions with MongoDB.
 Absolutely! Here's the updated README with the folder structure, assuming you're referring to a typical Node.js/Express.js project with the files you provided.
 
-**Table of Contents**
+# Table of Contents
 
 ## Code Structure
 
