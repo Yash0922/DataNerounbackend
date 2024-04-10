@@ -1,19 +1,13 @@
 
 # DataNeuron Backend API 
+## Getting Started
 
-**Table of Contents**
+1. Clone the repository.
+2. Install dependencies: `npm install`.
+3. Configure the MongoDB connection string in `index.js`.
+4. Deploy the API to Firebase Functions using `firebase deploy`.
 
-* Overview: #overview
-* Features: #features
-* Technologies Used: #technologies-used
-* API Endpoints: #api-endpoints
-    * POST /api/data: createData #overview
-    * PUT /api/data/:id: updateData #overview
-    * GET /api/data/count: getDataCount #overview
-* Database: #database
-* Deployment: #deployment
-* Code Structure: #code-structure
-* Error Handling: #error-handling
+**Note:** Authentication logic is not covered in this document, as it likely resides in a separate module or API. You'll need to implement authentication for the API endpoints marked as requiring it.
 
 ## Overview
 
@@ -131,13 +125,5 @@ The codebase is organized into the following folders:
 
 The API uses a central error handling middleware to handle and respond to errors consistently.
 
-## Getting Started
 
-1. Clone the repository.
-2. Install dependencies: `npm install`.
-3. Configure the MongoDB connection string in `index.js`.
-4. Deploy the API to Firebase Functions using `firebase deploy`.
 
-**Note:** Authentication logic is not covered in this document, as it likely resides in a separate module or API. You'll need to implement authentication for the API endpoints marked as requiring it.
-
-I hope this README provides a comprehensive overview of the DataNeuron Backend API! Let me know if you have any other questions.
