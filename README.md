@@ -61,6 +61,40 @@ This is the backend API for the DataNeuron application. It provides functionalit
     * Body: An object containing the count of 'add' and 'update' operations.
     * Execution time: Included in the response headers.
 
+Absolutely! Here's how to incorporate the auth routes into the README file:
+
+## Authentication
+
+    * POST /api/auth/register (register):
+        * Creates a new user account.
+        * Request body should contain username and password.
+        * Response:
+            * Status: 201 Created on success.
+            * Body: Information about the newly created user.
+    * POST /api/auth/login (login):
+        * Authenticates a user with their username and password.
+        * Request body should contain username and password.
+        * Response:
+            * Status: 200 OK on success.
+            * Body: Authentication token (e.g., JWT).
+
+* **Data Operations (require authentication)**
+   * POST /api/data (createData) 
+   * PUT /api/data/:id (updateData)
+   * GET /api/data/count (getDataCount)
+
+
+**Changes:**
+
+* **Authentication Heading:** Added a specific "Authentication" section to group the auth routes.
+* **Descriptions:** Clear descriptions of what each endpoint does, expected request data, and potential responses.
+
+**Tips:**
+
+* Consider adding examples of request/response payloads for clarity.
+* Indicate how the authentication token obtained after login should be used in subsequent requests that require authentication.
+
+
 ## Database
 
 The API uses MongoDB as the database. Mongoose is used as an Object Data Modeling (ODM) layer to simplify interactions with MongoDB.
