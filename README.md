@@ -70,6 +70,46 @@ This is the backend API for the DataNeuron application. It provides functionalit
 ## Database
 
 The API uses MongoDB as the database. Mongoose is used as an Object Data Modeling (ODM) layer to simplify interactions with MongoDB.
+Absolutely! Here's the updated README with the folder structure, assuming you're referring to a typical Node.js/Express.js project with the files you provided.
+
+**Table of Contents**
+
+## Code Structure
+
+```
+DataNeuronbackend/
+├── Controllers/
+│   ├── authController.js 
+│   ├── dataController.js 
+├── Middlewares/
+│   ├── auth.middleware.js
+│   ├── error.middleware.js
+├── Models/  
+│   └── Data.model.js  
+├── Routes/
+│   ├── authRoutes.js
+│   ├── dataRoutes.js
+├── utils/    
+│   └── ... (any utility functions)
+├── package.json
+├── index.js 
+```
+
+**Explanation:**
+
+* **Controllers:** Holds logic for handling API requests, processing data, and sending responses.
+* **Middlewares:**  Reusable functions to modify requests/responses, such as authentication ( `auth.middleware.js`) and error handling (`error.middleware.js`).
+* **Models:** Defines Mongoose schemas for storing data in the MongoDB database (e.g., `Data.model.js` for the Data collection).
+* **Routes:** Specifies the URL endpoints and connects them to the relevant controller actions.
+* **utils:** A place for any reusable helper functions.
+* **index.js** The main entry point of the Node.js application.
+* **package.json:** Contains project metadata, dependencies, and scripts.
+
+**Important to Note:**
+
+* Your project might have additional folders (like `config` or `test`) based on its complexity.
+* File names and folder organization might vary slightly depending on project conventions.
+
 
 ## Deployment
 
